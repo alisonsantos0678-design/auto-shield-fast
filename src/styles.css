@@ -6,7 +6,7 @@
 
 /*
  * Tahiti Seguro Auto — design system.
- * Navy/graphite base + emerald CTA accent.
+ * Navy/graphite base + amber CTA accent.
  */
 
 @theme inline {
@@ -40,9 +40,9 @@
   --color-navy: var(--navy);
   --color-navy-deep: var(--navy-deep);
   --color-navy-soft: var(--navy-soft);
-  --color-emerald: var(--emerald);
-  --color-emerald-bright: var(--emerald-bright);
-  --color-emerald-foreground: var(--emerald-foreground);
+  --color-amber: var(--amber);
+  --color-amber-bright: var(--amber-bright);
+  --color-amber-foreground: var(--amber-foreground);
   --color-sand: var(--sand);
   --color-on-navy: var(--on-navy);
   --color-on-navy-muted: var(--on-navy-muted);
@@ -58,9 +58,9 @@
   --navy-deep: oklch(0.21 0.05 258);
   --navy: oklch(0.28 0.06 258);
   --navy-soft: oklch(0.36 0.05 258);
-  --emerald: oklch(0.63 0.15 158);
-  --emerald-bright: oklch(0.72 0.17 158);
-  --emerald-foreground: oklch(0.18 0.04 258);
+  --amber: oklch(0.63 0.15 158);
+  --amber-bright: oklch(0.72 0.17 158);
+  --amber-foreground: oklch(0.18 0.04 258);
   --sand: oklch(0.975 0.006 250);
   --on-navy: oklch(0.98 0.004 250);
   --on-navy-muted: oklch(0.82 0.018 252);
@@ -128,8 +128,8 @@
 
 @utility btn-cta {
   @apply btn-base;
-  background: linear-gradient(135deg, var(--emerald-bright), var(--emerald));
-  color: var(--emerald-foreground);
+  background: linear-gradient(135deg, var(--amber-bright), var(--amber));
+  color: var(--amber-foreground);
   box-shadow: var(--shadow-cta);
   &:hover {
     transform: translateY(-3px);
@@ -167,7 +167,7 @@
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--emerald);
+  color: var(--amber);
   &::before {
     content: "";
     width: 22px;
