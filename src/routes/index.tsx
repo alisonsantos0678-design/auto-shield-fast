@@ -189,11 +189,11 @@ function Index() {
       {/* HERO */}
       <section id="hero" className="relative isolate overflow-hidden bg-navy-deep">
         <img
-          src={heroImg}
-          alt="Carro em rodovia molhada ao anoitecer"
-          width={1600}
-          height={1104}
-          className="absolute inset-0 h-full w-full object-cover object-[70%_center] opacity-80"
+          src={heroAsset.url}
+          alt="Equipe da Tahiti Corretora de Seguros"
+          width={1920}
+          height={997}
+          className="absolute inset-0 h-full w-full object-cover object-[70%_top] opacity-75"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/90 via-navy-deep/85 to-navy-deep md:bg-gradient-to-r md:from-navy-deep md:via-navy-deep/90 md:to-navy-deep/20" />
 
