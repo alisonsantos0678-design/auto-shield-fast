@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 import logoAsset from "@/assets/tahiti-logo.png.asset.json";
-import heroImg from "@/assets/hero-auto.jpg";
+import heroAsset from "@/assets/hero.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -160,7 +160,7 @@ function Index() {
             />
             <span className="hidden min-w-0 flex-col leading-tight sm:flex">
               <span className="font-display text-lg text-on-navy">Tahiti</span>
-              <span className="text-[10px] font-bold tracking-[0.18em] text-emerald-bright">
+              <span className="text-[10px] font-bold tracking-[0.18em] text-amber-bright">
                 SEGURO AUTO
               </span>
             </span>
@@ -189,24 +189,24 @@ function Index() {
       {/* HERO */}
       <section id="hero" className="relative isolate overflow-hidden bg-navy-deep">
         <img
-          src={heroImg}
-          alt="Carro em rodovia molhada ao anoitecer"
-          width={1600}
-          height={1104}
-          className="absolute inset-0 h-full w-full object-cover object-[70%_center] opacity-80"
+          src={heroAsset.url}
+          alt="Equipe da Tahiti Corretora de Seguros"
+          width={1920}
+          height={997}
+          className="absolute inset-0 h-full w-full object-cover object-[70%_top] opacity-75"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/90 via-navy-deep/85 to-navy-deep md:bg-gradient-to-r md:from-navy-deep md:via-navy-deep/90 md:to-navy-deep/20" />
 
         <div className="relative mx-auto max-w-6xl px-5 pt-32 pb-16 sm:px-8 md:pt-44 md:pb-28">
           <div className="max-w-2xl">
-            <span className="inline-flex items-center gap-2 rounded-full border border-emerald/40 bg-emerald/10 px-4 py-2 text-xs font-bold tracking-[0.12em] text-emerald-bright uppercase">
+            <span className="inline-flex items-center gap-2 rounded-full border border-amber/40 bg-amber/10 px-4 py-2 text-xs font-bold tracking-[0.12em] text-amber-bright uppercase">
               <ShieldCheck className="h-4 w-4" />
               Proteção completa 24h para o seu veículo
             </span>
 
             <h1 className="mt-6 text-4xl leading-[1.05] text-on-navy sm:text-5xl md:text-6xl">
               Carro batido, roubado ou parado na estrada.{" "}
-              <span className="text-emerald-bright">Quem paga o prejuízo amanhã?</span>
+              <span className="text-amber-bright">Quem paga o prejuízo amanhã?</span>
             </h1>
 
             <p className="mt-6 max-w-xl text-base leading-relaxed text-on-navy-muted sm:text-lg">
@@ -231,7 +231,7 @@ function Index() {
 
             <div className="mt-10 grid grid-cols-1 gap-4 border-t border-white/15 pt-6 sm:grid-cols-3">
               <div className="flex items-center gap-3">
-                <div className="flex shrink-0 gap-0.5 text-emerald-bright">
+                <div className="flex shrink-0 gap-0.5 text-amber-bright">
                   {[0, 1, 2, 3, 4].map((i) => (
                     <Star key={i} className="h-4 w-4 fill-current" />
                   ))}
@@ -241,13 +241,13 @@ function Index() {
                 </span>
               </div>
               <div className="flex items-center gap-3">
-                <Users className="h-5 w-5 shrink-0 text-emerald-bright" />
+                <Users className="h-5 w-5 shrink-0 text-amber-bright" />
                 <span className="min-w-0 text-sm text-on-navy-muted">
                   <strong className="text-on-navy">+8.000</strong> motoristas protegidos
                 </span>
               </div>
               <div className="flex items-center gap-3">
-                <Clock className="h-5 w-5 shrink-0 text-emerald-bright" />
+                <Clock className="h-5 w-5 shrink-0 text-amber-bright" />
                 <span className="min-w-0 text-sm text-on-navy-muted">
                   <strong className="text-on-navy">15 anos</strong> de corretora
                 </span>
@@ -288,8 +288,8 @@ function Index() {
               </ul>
             </div>
 
-            <div className="card-lift rounded-2xl border border-emerald/30 bg-navy-deep p-7 text-on-navy sm:p-9">
-              <span className="inline-flex items-center gap-2 rounded-full bg-emerald/20 px-3 py-1.5 text-xs font-bold tracking-wide text-emerald-bright uppercase">
+            <div className="card-lift rounded-2xl border border-amber/30 bg-navy-deep p-7 text-on-navy sm:p-9">
+              <span className="inline-flex items-center gap-2 rounded-full bg-amber/20 px-3 py-1.5 text-xs font-bold tracking-wide text-amber-bright uppercase">
                 Com a Tahiti
               </span>
               <h3 className="mt-5 text-2xl text-on-navy">A solução</h3>
@@ -301,7 +301,7 @@ function Index() {
                   "Atendimento humanizado via WhatsApp, com um corretor de verdade.",
                 ].map((t) => (
                   <li key={t} className="flex gap-3 text-sm leading-relaxed text-on-navy-muted">
-                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-emerald-bright" />
+                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-amber-bright" />
                     {t}
                   </li>
                 ))}
@@ -328,7 +328,7 @@ function Index() {
                 className="card-lift group rounded-2xl border border-border bg-card p-7"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6">
-                  <Icon className="h-6 w-6 text-emerald-bright" />
+                  <Icon className="h-6 w-6 text-amber-bright" />
                 </div>
                 <h3 className="mt-5 text-lg">{title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{text}</p>
@@ -342,7 +342,7 @@ function Index() {
       <section id="como-funciona" className="bg-navy-deep py-20 text-on-navy sm:py-24">
         <div className="mx-auto max-w-6xl px-5 sm:px-8">
           <div className="max-w-2xl">
-            <span className="eyebrow text-emerald-bright">Como funciona</span>
+            <span className="eyebrow text-amber-bright">Como funciona</span>
             <h2 className="mt-4 text-3xl leading-tight text-on-navy sm:text-4xl">
               Três passos entre você e a tranquilidade.
             </h2>
@@ -352,9 +352,9 @@ function Index() {
             {steps.map(({ n, title, text }) => (
               <div
                 key={n}
-                className="card-lift rounded-2xl border border-white/10 bg-white/[0.04] p-7 hover:border-emerald/40"
+                className="card-lift rounded-2xl border border-white/10 bg-white/[0.04] p-7 hover:border-amber/40"
               >
-                <span className="font-display text-4xl text-emerald-bright">{n}</span>
+                <span className="font-display text-4xl text-amber-bright">{n}</span>
                 <h3 className="mt-4 text-xl text-on-navy">{title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-on-navy-muted">{text}</p>
               </div>
@@ -386,7 +386,7 @@ function Index() {
                 key={t.name}
                 className="card-lift flex flex-col rounded-2xl border border-border bg-card p-7"
               >
-                <div className="flex gap-0.5 text-emerald">
+                <div className="flex gap-0.5 text-amber">
                   {[0, 1, 2, 3, 4].map((i) => (
                     <Star key={i} className="h-4 w-4 fill-current" />
                   ))}
@@ -428,7 +428,7 @@ function Index() {
                   >
                     <span className="min-w-0 text-base font-bold">{f.q}</span>
                     {isOpen ? (
-                      <Minus className="h-5 w-5 shrink-0 text-emerald" />
+                      <Minus className="h-5 w-5 shrink-0 text-amber" />
                     ) : (
                       <ChevronDown className="h-5 w-5 shrink-0 text-muted-foreground" />
                     )}
@@ -453,7 +453,7 @@ function Index() {
 
       {/* CTA FINAL */}
       <section className="relative overflow-hidden bg-navy py-20 sm:py-24">
-        <div className="pointer-events-none absolute -top-40 -right-32 h-[520px] w-[520px] rounded-full bg-emerald/20 blur-3xl" />
+        <div className="pointer-events-none absolute -top-40 -right-32 h-[520px] w-[520px] rounded-full bg-amber/20 blur-3xl" />
         <div className="relative mx-auto max-w-2xl px-5 text-center sm:px-8">
           <h2 className="text-3xl leading-tight text-on-navy sm:text-4xl">
             Não espere o imprevisto acontecer. Proteja seu carro hoje mesmo.
@@ -491,16 +491,16 @@ function Index() {
               <span className="font-display text-lg text-on-navy">Tahiti Corretora</span>
             </div>
             <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
-              <a href="#beneficios" className="transition-colors hover:text-emerald-bright">
+              <a href="#beneficios" className="transition-colors hover:text-amber-bright">
                 Benefícios
               </a>
-              <a href="#como-funciona" className="transition-colors hover:text-emerald-bright">
+              <a href="#como-funciona" className="transition-colors hover:text-amber-bright">
                 Como Funciona
               </a>
-              <a href="#faq" className="transition-colors hover:text-emerald-bright">
+              <a href="#faq" className="transition-colors hover:text-amber-bright">
                 FAQ
               </a>
-              <a href={CTA_MAIN} target="_blank" rel="noreferrer" className="transition-colors hover:text-emerald-bright">
+              <a href={CTA_MAIN} target="_blank" rel="noreferrer" className="transition-colors hover:text-amber-bright">
                 WhatsApp
               </a>
             </nav>
@@ -508,10 +508,10 @@ function Index() {
           <div className="flex flex-col gap-3 pt-6 text-xs sm:flex-row sm:items-center sm:justify-between">
             <p>© {new Date().getFullYear()} Tahiti Corretora de Seguros · Manaus/AM</p>
             <p className="flex flex-wrap gap-x-4 gap-y-1">
-              <a href="#" className="transition-colors hover:text-emerald-bright">
+              <a href="#" className="transition-colors hover:text-amber-bright">
                 Termos de uso
               </a>
-              <a href="#" className="transition-colors hover:text-emerald-bright">
+              <a href="#" className="transition-colors hover:text-amber-bright">
                 Política de privacidade
               </a>
             </p>
@@ -531,11 +531,11 @@ function Index() {
         target="_blank"
         rel="noreferrer"
         aria-label="Falar no WhatsApp"
-        className={`fixed right-5 bottom-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-emerald shadow-[var(--shadow-cta)] transition-all duration-300 hover:scale-110 ${
+        className={`fixed right-5 bottom-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-amber shadow-[var(--shadow-cta)] transition-all duration-300 hover:scale-110 ${
           scrolled ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
       >
-        <MessageCircle className="h-7 w-7 text-emerald-foreground" />
+        <MessageCircle className="h-7 w-7 text-amber-foreground" />
       </a>
     </div>
   );
